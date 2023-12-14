@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-jheo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-bnre-tenant/appstudio/devfile-sample-python-basic-jheo@sha256:c981f436540d4e2c0cfc5b7e3930775eb6ca811417b833c35aea826176bdc747
+        name: my-python
+        resources: {}
+status: {}
