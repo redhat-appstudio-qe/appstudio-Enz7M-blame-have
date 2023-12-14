@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-fdbz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-bnre-tenant/appstudio/dc-metro-map-fdbz@sha256:f90c4a8b7e6c0d503b72d7ee09b1f5eef90c524f4005251c29e55723b54f7107
+        name: my-nodejs
+        resources: {}
+status: {}
